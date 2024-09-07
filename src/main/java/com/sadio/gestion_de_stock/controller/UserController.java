@@ -47,6 +47,7 @@ public class UserController {
 
     //@PostMapping(path ="/auth")
     @PostMapping("connexion")
+    //
     public Map<String, String> authUser(@RequestBody AuthenticationDto authenticationDto){
 
        final Authentication authenticate = authenticationManager.authenticate(
